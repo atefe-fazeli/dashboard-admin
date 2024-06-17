@@ -24,19 +24,19 @@ function Sidebar() {
         {
           id: 0,
           title: "Home",
-          path: "",
+          path: "/",
           icon: <HomeIcon color="success" fontSize="small" />,
         },
         {
           id: 1,
           title: "Analytics",
-          path: "",
+          path: "/analytics",
           icon: <ShowChartIcon color="success" fontSize="small" />,
         },
         {
           id: 2,
           title: "Sales",
-          path: "",
+          path: "/sales",
           icon: <TimelineIcon color="success" fontSize="small" />,
         },
       ],
@@ -48,31 +48,31 @@ function Sidebar() {
         {
           id: 0,
           title: "Users",
-          path: "",
+          path: "/users",
           icon: <PersonIcon color="success" fontSize="small" />,
         },
         {
           id: 1,
           title: "new User",
-          path: "",
+          path: "/newuser",
           icon: <PersonAddIcon color="success" fontSize="small" />,
         },
         {
           id: 2,
           title: "Products",
-          path: "",
+          path: "/products",
           icon: <Inventory2Icon color="success" fontSize="small" />,
         },
         {
           id: 3,
           title: "Transactions",
-          path: "",
+          path: "/transactions",
           icon: <AttachMoneyIcon color="success" fontSize="small" />,
         },
         {
           id: 4,
           title: "Reports",
-          path: "",
+          path: "/reports",
           icon: <SignalCellularAltIcon color="success" fontSize="small" />,
         },
       ],
@@ -84,19 +84,19 @@ function Sidebar() {
         {
           id: 0,
           title: "Mail",
-          path: "",
+          path: "/mail",
           icon: <EmailIcon color="success" fontSize="small" />,
         },
         {
           id: 1,
           title: "Feedback",
-          path: "",
+          path: "/feedback",
           icon: <DynamicFeedIcon color="success" fontSize="small" />,
         },
         {
           id: 2,
           title: "Massages",
-          path: "",
+          path: "/massages",
           icon: <ChatBubbleIcon color="success" fontSize="small" />,
         },
       ],
@@ -108,7 +108,7 @@ function Sidebar() {
         {
           id: 0,
           title: "Manage",
-          path: "",
+          path: "/manage",
           icon: <ManageAccountsIcon color="success" fontSize="small" />,
         },
         {
@@ -149,7 +149,7 @@ function Sidebar() {
               {item.submMenus.map((subMenu) => (
                 <NavLink
                   key={subMenu.id}
-                  path={subMenu.path}
+                  to={subMenu.path}
                   style={{ marginTop: "10px", padding: "5px" }}
                 >
                   <Stack direction="row" alignItems="center" spacing={1}>
