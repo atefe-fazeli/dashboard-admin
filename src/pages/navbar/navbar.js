@@ -4,12 +4,12 @@ import FitbitIcon from "@mui/icons-material/Fitbit";
 import SettingsIcon from "@mui/icons-material/Settings";
 import LanguageIcon from "@mui/icons-material/Language";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import './navbar.css'
+import "./navbar.css";
 function Navbar() {
   return (
     <Box
       sx={{
-        height: "100px",
+        height: "80px",
         position: "fixed",
         top: "0",
         zIndex: "999",
@@ -25,22 +25,24 @@ function Navbar() {
         }}
       >
         <Box display="flex" alignItems="center" gap={1}>
-          <Typography color={"darkgreen"}>Admin Dashboard</Typography>
+          <Typography color={"darkgreen"} variant="h5">
+            Admin Dashboard
+          </Typography>
           <FitbitIcon sx={{ color: "darkgreen" }} />
         </Box>
         <Box display="flex" alignItems="center" gap={1}>
-          <div>
-            <NotificationsIcon fontSize="large" color="disabled"/>
+          <div className="badgeContainer">
+            <span className="iconBadge">10</span>
+            <NotificationsIcon fontSize="large" color="disabled" />
           </div>
           <div className="badgeContainer">
-            <LanguageIcon fontSize="large" color="disabled"/>
+            <LanguageIcon fontSize="large" color="disabled" />
             <span className="iconBadge">10</span>
           </div>
           <div className="badgeContainer">
-            <SettingsIcon fontSize="large" color="disabled"/>
-            <span className="iconBadge">10</span>
+            <SettingsIcon fontSize="large" color="disabled" />
           </div>
-          <Avatar alt="user" />
+          <Avatar alt="user" sx={{ cursor: "pointer" }} />
         </Box>
       </Box>
     </Box>

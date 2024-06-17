@@ -14,4 +14,10 @@
 }
 .badgeContainer{
     position: relative;
+    cursor: pointer;
+    padding:1px 1px 0 1px;
+}
+.badgeContainer:hover{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
