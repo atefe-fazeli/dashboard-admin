@@ -150,7 +150,8 @@ function Sidebar() {
                 <NavLink
                   key={subMenu.id}
                   to={subMenu.path}
-                  style={{ marginTop: "10px", padding: "5px" }}
+                  className="navLink"
+                  style={{ marginTop: "10px", padding: "5px", }}
                 >
                   <Stack direction="row" alignItems="center" spacing={1}>
                     {subMenu.icon}
