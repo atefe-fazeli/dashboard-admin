@@ -3,11 +3,10 @@ import {
   Line,
   CartesianGrid,
   XAxis,
-  YAxis,
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import {Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const data = [
   { name: "Feb", sale: 400 },
@@ -24,8 +23,8 @@ const data = [
 ];
 function Chart() {
   return (
-    <>
-      <Typography variant="h6">Month sales</Typography>
+    <Box boxShadow=" rgba(0, 0, 0, 0.75) 0 0 15px -10px" padding={3}>
+      <Typography variant="h6" marginBottom={2}>Month sales</Typography>
       <ResponsiveContainer width="100%" aspect={4}>
         <LineChart width={600} height={300} data={data}>
           <Line type="monotone" dataKey="sale" stroke="#8884d8" />
@@ -34,7 +33,7 @@ function Chart() {
           <Tooltip />
         </LineChart>
       </ResponsiveContainer>
-    </>
+    </Box>
   );
 }
 export default Chart;

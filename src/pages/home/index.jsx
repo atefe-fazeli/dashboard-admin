@@ -4,11 +4,14 @@ import { Box, Stack, Typography } from "@mui/material";
 import { HiOutlineArrowUp } from "react-icons/hi";
 import { HiOutlineArrowDown } from "react-icons/hi";
 import Chart from "./components/chart";
+import WidgetSm from "./components/widgetsm";
+
 const data = [
   { id: 0, title: "Revanue", total: 2153, percent: -11.4 },
   { id: 1, title: "Sales", total: 4415, percent: -1.4 },
   { id: 2, title: "Cost", total: 2225, percent: +2.4 },
 ];
+
 function Home() {
   return (
     <div>
@@ -29,19 +32,23 @@ function Home() {
                 <Typography variant="h4">{item.total}</Typography>
                 <Typography variant="body2">{item.percent}</Typography>
                 {item.percent < 0 ? (
-                  <HiOutlineArrowDown style={{ color: "red" }}/>
+                  <HiOutlineArrowDown style={{ color: "red" }} />
                 ) : (
-                  <HiOutlineArrowUp  style={{ color: "green" }}/>
+                  <HiOutlineArrowUp style={{ color: "green" }} />
                 )}
               </Stack>
-              <Typography variant="body2" sx={{ color: "gray" }}>Compared to last month</Typography>
+              <Typography variant="body2" sx={{ color: "gray" }}>
+                Compared to last month
+              </Typography>
             </Box>
           </Grid>
         ))}
         <Grid xs={12}>
-          <Chart/>
+          <Chart />
         </Grid>
-        <Grid xs={5}></Grid>
+        <Grid xs={5}>
+          <WidgetSm />
+        </Grid>
         <Grid xs={7}></Grid>
       </Grid>
     </div>
