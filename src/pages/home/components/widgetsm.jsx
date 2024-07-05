@@ -17,7 +17,7 @@ const data = [
 function WidgetSm() {
   return (
     <Box sx={{ boxShadow: " rgba(0, 0, 0, 0.75) 0 0 15px -10px" }} p={3}>
-      <Typography variant="h6" marginBottom={2}>
+      <Typography variant="h6" marginBottom={2} fontWeight="bold">
         New Join Members
       </Typography>
 

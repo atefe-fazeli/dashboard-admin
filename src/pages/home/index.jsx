@@ -5,6 +5,7 @@ import { HiOutlineArrowUp } from "react-icons/hi";
 import { HiOutlineArrowDown } from "react-icons/hi";
 import Chart from "./components/chart";
 import WidgetSm from "./components/widgetsm";
+import WidgetLg from "./components/widgetlg";
 
 const data = [
   { id: 0, title: "Revanue", total: 2153, percent: -11.4 },
@@ -49,7 +50,9 @@ function Home() {
         <Grid xs={5}>
           <WidgetSm />
         </Grid>
-        <Grid xs={7}></Grid>
+        <Grid xs={7}>
+        <WidgetLg />
+        </Grid>
       </Grid>
     </div>
   );
