@@ -102,7 +102,7 @@ function Sidebar() {
       ],
     },
     {
-      id: 0,
+      id: 3,
       title: "Staff",
       submMenus: [
         {
